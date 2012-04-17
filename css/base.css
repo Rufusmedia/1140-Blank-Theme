@@ -120,7 +120,7 @@ small {
 
 blockquote, blockquote p { 
 	font-size: 1em; 
-	line-height: 1em; 
+	line-height: 1.4em; 
 	color: #777; 
 	font-style: italic; 
 }
@@ -199,7 +199,7 @@ li {
 	margin-bottom: 0.5em; 
 }
 li p { 
-	line-height: 1em;
+	line-height: 1.5em;
  }
 
 /*
