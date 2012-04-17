@@ -1,0 +1,515 @@
+/*
+|====================================================
+| BROWSER RESETS
+|====================================================
+*/
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*
+|====================================================
+| BASIC STYLING
+|====================================================
+*/
+body {
+	background: #fff;
+	font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	line-height:1.4em;
+	color: #444;
+	-webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
+	-webkit-text-size-adjust: 100%;
+ }
+
+/*
+|====================================================
+| DEFAULT TYPOGRAPHY
+|====================================================
+*/
+h1, h2, h3, h4, h5, h6 {
+	color: #181818;
+	font-family: "Georgia", "Times New Roman", Helvetica, Arial, sans-serif;
+	font-weight: normal;
+	margin:0;
+}
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { 
+	font-weight: inherit; 
+}
+h1 { 
+	font-size: 3em;
+	line-height: 1em;
+	margin-bottom: 0.5em;
+}
+h2 { 
+	font-size: 2.5em; 
+	line-height: 1em; 
+	margin-bottom: 0.5em; 
+}
+h3 { 
+	font-size: 2em; 
+	line-height: 1em; 
+	margin-bottom: 0.5em;
+}
+h4 { 
+	font-size: 1.6em; 
+	line-height: 1em; 
+	margin-bottom: 0.5em; 
+}
+h5 { 
+	font-size: 1.2em; 
+	line-height: 1em; 
+}
+h6 { 
+	font-size: 1em; 
+	line-height: 1em; 
+}
+
+p { 
+	margin: 0 0 1.5em 0; 
+}
+p img { 
+	margin: 0; 
+}
+
+em { 
+	font-style: italic; 
+}
+strong { 
+	font-weight: bold;
+}
+small { 
+	font-size: 0.7em; 
+}
+
+blockquote, blockquote p { 
+	font-size: 1em; 
+	line-height: 1em; 
+	color: #777; 
+	font-style: italic; 
+}
+blockquote { 
+	margin: 0 0 1em; 
+	padding: 0 1em; 
+	border-left: 1px solid #ddd; 
+}
+blockquote cite { 
+	display: block; 
+	font-size: 0.8em; 
+	color: #555; 
+}
+blockquote cite:before { 
+	content: "\2014 \0020";
+}
+blockquote cite a, blockquote cite a:visited, blockquote cite a:visited { 
+	color: #555; 
+}
+
+hr { 
+	border: solid #ddd; 
+	border-width: 1px 0 0; 
+	clear: both; 
+	margin: 0.5em 0 1.5em; 
+	height: 0; 
+}
+
+
+/*
+|====================================================
+| DEFAULT LINKS
+|====================================================
+*/
+a, a:visited { 
+	color: #333; 
+	text-decoration: underline; 
+	outline: 0; 
+}
+a:hover, a:focus { 
+	color: #000; 
+}
+p a, p a:visited { 
+	line-height: inherit; 
+}
+
+
+/*
+|====================================================
+| DEFAULT LIST ITEMS
+|====================================================
+*/
+ul, ol { 
+	margin-bottom: 1em; 
+}
+ul { 
+	list-style: disc; 
+}
+ol { 
+	list-style: decimal;
+ }
+ol, ul { 
+	margin-left: 1.5em; 
+}
+ul ul, ul ol,
+ol ol, ol ul { 
+	margin: 0.2em 0 0.2em 1.5em; 
+	font-size: 1em;  
+}
+ul ul li, ul ol li,
+ol ol li, ol ul li { 
+	margin-bottom: 0.5em; 
+}
+li { 
+	line-height: 1.3em; 
+	margin-bottom: 0.5em; 
+}
+li p { 
+	line-height: 1em;
+ }
+
+/*
+|====================================================
+| DEFAULT FORMS
+|====================================================
+*/
+form {
+	margin-bottom: 1em; 
+}
+fieldset {
+	margin-bottom: 1em; 
+}
+input[type="text"],
+input[type="password"],
+input[type="email"],
+textarea,
+select {
+	border: 1px solid #ccc;
+	padding: 6px 4px;
+	outline: none;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	border-radius: 2px;
+	font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: #777;
+	margin: 0;
+	width: 300px;
+	max-width: 95%;
+	display: block;
+	margin-bottom: 20px;
+	background: #fff; 
+}
+select {
+	padding: 0; 
+}
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+	border: 1px solid #aaa;
+	color: #444;
+	-moz-box-shadow: 0 0 3px rgba(0,0,0,.2);
+	-webkit-box-shadow: 0 0 3px rgba(0,0,0,.2);
+	box-shadow:  0 0 3px rgba(0,0,0,.2); 
+}
+textarea {
+	min-height: 3em; 
+}
+label,
+legend {
+	display: block;
+	font-weight: bold; 
+}
+select {
+	width: 300px; 
+}
+input[type="checkbox"] {
+	display: inline; 
+}
+
+
+
+/*
+|====================================================
+| 1140 RESPONSIVE GRID LAYOUT
+|====================================================
+*/
+.container {
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.row {
+	width: 100%;
+	max-width: 1140px;
+	min-width: 755px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+.onecol, .twocol, .threecol, .fourcol, .fivecol, .sixcol, .sevencol, .eightcol, .ninecol, .tencol, .elevencol {
+	margin-right: 3.8%;
+	float: left;
+	min-height: 1px;
+}
+
+.row .onecol {
+	width: 4.85%;
+}
+
+.row .twocol {
+	width: 13.45%;
+}
+
+.row .threecol {
+	width: 22.05%;
+}
+
+.row .fourcol {
+	width: 30.75%;
+}
+
+.row .fivecol {
+	width: 39.45%;
+}
+
+.row .sixcol {
+	width: 48%;
+}
+
+.row .sevencol {
+	width: 56.75%;
+}
+
+.row .eightcol {
+	width: 65.4%;
+}
+
+.row .ninecol {
+	width: 74.05%;
+}
+
+.row .tencol {
+	width: 82.7%;
+}
+
+.row .elevencol {
+	width: 91.35%;
+}
+
+.row .twelvecol {
+	width: 100%;
+	float: left;
+}
+
+.last {
+	margin-right: 0px;
+}
+
+img, object, embed {
+	max-width: 100%;
+}
+
+img {
+	height: auto;
+}
+
+
+/*
+|====================================================
+| FLOAT CLARING
+|====================================================
+*/
+
+.container:after { content: "\0020"; display: block; height: 0; clear: both; visibility: hidden; }
+
+.clearfix:before,
+.clearfix:after {
+	content: '\0020';
+	display: block;
+	overflow: hidden;
+	visibility: hidden;
+	width: 0;
+	height: 0; 
+}
+
+.clearfix:after {
+	clear: both; 
+}
+  
+.clearfix {
+	zoom: 1; 
+}
+
+.clear {
+	clear: both;
+	display: block;
+	overflow: hidden;
+	visibility: hidden;
+	width: 0;
+	height: 0;
+}
+
+/*
+|====================================================
+| WORDPRESS CMS DEFAULT STYLES
+|====================================================
+*/
+
+/* POST AREA STYLES
+======================= */
+.main-content article {
+    position:relative;
+}
+
+.post-edit-link {
+	position:absolute;
+	top:10px;
+	right:10px;
+	padding:1px 3px;
+	background:#ddd;
+	border:solid 1px #777;
+	text-decoration:none;
+}
+
+.post-edit-link a {
+	text-decoration:none;
+}
+
+.post-edit-link:hover {
+	background: #ccc;
+}
+
+.post-meta {
+font-size:12px;
+color:#555;
+}
+
+/* WP FLOATS & IMAGES
+======================= */
+.alignleft {
+float: left !important; 
+}
+
+.alignright {
+float: right !important; 
+}
+
+p .alignleft, img.alignleft, .wp-caption.alignleft { 
+margin: 5px 10px 10px 0;
+padding: 0; 
+}
+
+p .alignright, img.alignright, .wp-caption.alignright {
+margin: 5px 0 10px 10px; 
+padding: 0; 
+}
+
+.aligncenter {
+display:block;
+margin:0 auto;
+}
+
+.wp-caption-text {
+text-align:center;
+font-size:12px;
+color:#555;
+font-style:italic;
+margin:0;
+}
+
+
+/* COMMENT LIST STYLES
+======================= */
+ol.commentlist { list-style: none; margin:0; padding:0 0 20px 0; }
+ol.commentlist li { }
+ol.commentlist li.alt { }
+ol.commentlist li.bypostauthor { }
+ol.commentlist li.byuser { }
+ol.commentlist li.comment-author-admin { }
+ol.commentlist li.comment { padding: 20px 20px 20px 104px; position:relative; min-height:104px; }
+ol.commentlist li.comment div.comment-author { }
+ol.commentlist li.comment div.vcard { }
+ol.commentlist li.comment div.vcard cite.fn { font-style: normal; }
+ol.commentlist li.comment div.vcard cite.fn a.url { }
+ol.commentlist li.comment div.vcard img.avatar { position:absolute; top:20px; left:20px; }
+ol.commentlist li.comment div.vcard img.avatar-32 { }
+ol.commentlist li.comment div.vcard img.photo { }
+ol.commentlist li.comment div.vcard span.says { }
+ol.commentlist li.comment div.commentmetadata { }
+ol.commentlist li.comment div.comment-meta { font-size: 10px; color:#aaa;  }
+ol.commentlist li.comment div.comment-meta a { }
+ol.commentlist li.comment p { }
+ol.commentlist li.comment ul { }
+ol.commentlist li.comment div.reply { font-size: 12px; }
+ol.commentlist li.comment div.reply a { }
+ol.commentlist li.comment ul.children { list-style: none; margin: 10px 0 0 0; padding:0;}
+ol.commentlist li.comment ul.children li { }
+ol.commentlist li.comment ul.children li.alt { }
+ol.commentlist li.comment ul.children li.bypostauthor { }
+ol.commentlist li.comment ul.children li.byuser { }
+ol.commentlist li.comment ul.children li.comment { }
+ol.commentlist li.comment ul.children li.comment-author-admin { }
+ol.commentlist li.comment ul.children li.depth-2 { border-left: 5px solid #555; margin: 0 0 10px 10px; }
+ol.commentlist li.comment ul.children li.depth-3 { border-left: 5px solid #999; margin: 0 0 10px 10px; }
+ol.commentlist li.comment ul.children li.depth-4 { border-left: 5px solid #bbb; margin: 0 0 10px 10px; }
+ol.commentlist li.comment ul.children li.depth-5 { }
+ol.commentlist li.comment ul.children li.odd { }
+ol.commentlist li.even { background: #fff; }
+ol.commentlist li.odd { background: #f6f6f6; }
+ol.commentlist li.parent { border-left: 5px solid #111; }
+ol.commentlist li.thread-alt { }
+ol.commentlist li.thread-even { }
+ol.commentlist li.thread-odd { }
+
+/* COMMENT FORM STYLES
+======================= */
+#respond form {
+padding:0 0 0 20px;
+}
+
+#respond input[type="text"] {
+margin-bottom:5px;
+width:350px;
+padding:3px;
+}
+
+#respond textarea {
+margin-bottom:5px;
+width:550px;
+height:150px;
+padding:3px;
+}
